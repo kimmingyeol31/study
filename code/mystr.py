@@ -1,0 +1,2 @@
+s = 'python'
+print(s[:])
