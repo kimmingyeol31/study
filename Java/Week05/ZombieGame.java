@@ -66,6 +66,9 @@ public class ZombieGame {
 			}
 			
 			if (player >= 20) {
+				ZombieGame.Erase();
+				String f = ZombieGame.Render(player, zombie1, zombie2);
+				System.out.printf(f + "\n\n");
 				System.out.println("미션 클리어!!! 목적지에 도착했습니다");
 				break;
 			}
