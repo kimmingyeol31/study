@@ -8,11 +8,10 @@ public class Football {
 		Scanner scanner = new Scanner(System.in);
 		Random random = new Random();
 
+		int round = 1;
+		int playerWon = 0, computerWon = 0;
+		
 		System.out.println("축구 게임을 시작합니다.");
-		
-		
-		int playCount = 1;
-		int playerWin = 0, computerWin = 0;
 		
 		while (true) {
 			int keeper = random.nextInt(1, 4);
@@ -28,7 +27,7 @@ public class Football {
 				action = "오른쪽";
 			}
 			
-			if (playCount % 2 == 1) {
+			if (round % 2 == 1) {
 				System.out.println("내가 공을 찰 차례입니다.\n(왼쪽-1, 가운데-2, 오른쪽-3, 게임 끝-4)");
 				int userInput = scanner.nextInt();
 				
@@ -49,7 +48,7 @@ public class Football {
 				
 				if (keeper != userInput) {
 					System.out.println("골인입니다.");
-					playerWin++;
+					playerWon++;
 				}
 				else {
 					System.out.println("아깝습니다.!!! 골키퍼가 골을 막았습니다.");
@@ -79,32 +78,30 @@ public class Football {
 				}
 				else {
 					System.out.println("아깝습니다.!!! 골을 먹혔습니다.");
-					computerWin += 1;
+					computerWon += 1;
 				}
 			}
 			
-			if (computerWin != playerWin && playCount >= 10) {
+			if (computerWon != playerWon && round >= 10) {
 				break;
 			}
-			else if (computerWin == playerWin && playCount >= 10) {
+			else if (computerWon == playerWon && round >= 10) {
 				System.out.print("동점입니다. 1번씩 공을 더 차서 승부를 결정합니다.");
 			}
 			
-			playCount += 1;
-			
+			round += 1;	
 		}
 		
-		System.out.printf("나는 %d골, 컴퓨터는 %d골을 넣어 ", playerWin, computerWin);
+		System.out.printf("나는 %d골, 컴퓨터는 %d골을 넣어 ", playerWon, computerWon);
 		
-		if (playerWin > computerWin) {
+		if (playerWon > computerWon) {
 			System.out.println("내가 이겼습니다.");
 		}
-		else if (computerWin > playerWin) {
+		else {
 			System.out.println("컴퓨터가 이겼습니다.");
 		}
 		
 		scanner.close();
 		System.out.print("게임을 종료합니다.");
 	}
-
 }
