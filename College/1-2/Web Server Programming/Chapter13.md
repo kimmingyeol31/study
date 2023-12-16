@@ -1,12 +1,4 @@
 ### 1. 다음은 JSTL이 제공하는 5가지 분류에 대한 태그의 세부, 영역과 태그에서 사용되는 접두어, 그리고 URI를 정리한 표이다. 다음에서 빈 부분을 완성하시오.
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-width:1px;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-width:1px;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-nrix{text-align:center;vertical-align:middle}
-</style>
 <table class="tg">
 <thead>
   <tr>
