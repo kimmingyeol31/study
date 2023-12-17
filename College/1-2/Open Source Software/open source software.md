@@ -106,5 +106,5 @@
 <br>
 
 ### Untracked 파일 삭제
-`git clean -f`: 모든 untracked 파일을 삭제함
+`git clean -f`: 모든 untracked 파일을 삭제함  
 `git clean -i`: 대화형 프롬프트를 통해 지정한 untracked 파일만 삭제함

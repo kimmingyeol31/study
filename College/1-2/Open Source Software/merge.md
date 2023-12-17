@@ -32,6 +32,7 @@ $ git merge <branch> [--ff-only]
 
 > 💡 fast-forward 방식으로 병합이 가능한 모든 상황은 3-way 방식으로 병합할 수 있다.  
 <br>
+
 **병합 방법**
 ```
 $ git merge <branch> [-m <msg>] [--no-ff]
@@ -48,6 +49,7 @@ $ git merge <branch> [-m <msg>] [--no-ff]
 
 > 💡 fast-forward 방식으로 병합이 가능함에도 불구하고 3-way 방식으로 병합할 수 있는 이유는 병합된 브랜치가 그대로 남기 때문에 이후 작업 확인 및 브랜치 관리면에서 유용하기 때문이다.  
 <br>
+
 **병합 결과**  
 두개의 브랜치를 통합하는 과정이 포함된 커밋이 생성된다.  
 <br>
